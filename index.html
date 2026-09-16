@@ -1,584 +1,477 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Picture Lessons – Every Picture Has a Lesson</title>
-
-<meta name="description" content="Discover meaningful life lessons through pictures about family, education, farming, kindness, community, culture, nature and responsibility.">
-
-<meta name="robots" content="index,follow">
-
-<link rel="canonical" href="https://michael26312.github.io/picture-lessons/">
-
-<meta property="og:title" content="Picture Lessons – Every Picture Has a Lesson">
-<meta property="og:description" content="Meaningful lessons through powerful pictures.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Picture Lessons – Life Lessons Through Powerful Images</title><meta name="description" content="Discover meaningful life, family, education, farming, culture, kindness and community lessons through powerful pictures and stories.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://michael26312.github.io/picture-lessons/"><meta property="og:title" content="Picture Lessons – Every Picture Has a Lesson">
+<meta property="og:description" content="Discover meaningful lessons hidden inside everyday pictures.">
 <meta property="og:type" content="website">
-
-<script type="application/ld+json">
+<meta property="og:url" content="https://michael26312.github.io/picture-lessons/"><script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"WebSite",
- "name":"Picture Lessons",
- "url":"https://michael26312.github.io/picture-lessons/"
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Picture Lessons",
+  "url":"https://michael26312.github.io/picture-lessons/",
+  "description":"Meaningful life lessons told through pictures and stories.",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://michael26312.github.io/picture-lessons/?q={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
 }
-</script>
-
-<style>
-
+</script><style>
 *{box-sizing:border-box}
-
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-color:#222;
-line-height:1.6
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f5f7fa;
+  color:#222;
+  line-height:1.6
 }
-
 header{
-background:#111;
-color:white;
-text-align:center;
-padding:40px 20px
+  background:#17324d;
+  color:white;
+  text-align:center;
+  padding:35px 15px
 }
-
-header h1{
-margin:0;
-font-size:38px
-}
-
-header p{
-margin:8px 0 0
-}
-
+header h1{margin:0;font-size:38px}
+header p{margin:8px 0 0;font-size:18px}
 nav{
-background:white;
-padding:15px;
-text-align:center;
-position:sticky;
-top:0;
-z-index:10;
-box-shadow:0 2px 8px #ddd
+  background:white;
+  padding:14px;
+  text-align:center;
+  box-shadow:0 2px 8px #ddd;
+  position:sticky;
+  top:0;
+  z-index:10
 }
-
 nav a{
-margin:0 8px;
-color:#222;
-text-decoration:none;
-font-weight:bold
+  margin:0 12px;
+  color:#17324d;
+  text-decoration:none;
+  font-weight:bold
 }
-
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:25px 15px
+}
 .hero{
-text-align:center;
-padding:45px 20px
+  text-align:center;
+  padding:30px 10px
 }
-
-.hero h2{
-font-size:32px;
-margin:0 0 10px
+.hero h2{font-size:32px;margin:10px 0}
+.hero p{color:#555}
+.controls{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0
 }
-
-.hero p{
-max-width:700px;
-margin:auto;
-color:#555
-}
-
-.search{
-max-width:800px;
-margin:auto;
-padding:0 20px 30px;
-display:flex;
-gap:10px;
-flex-wrap:wrap
-}
-
 input,select,button{
-padding:13px;
-border-radius:9px;
-border:1px solid #ddd;
-font-size:15px
+  padding:13px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:16px
 }
-
-input{
-flex:1;
-min-width:200px
-}
-
+input{flex:1;min-width:220px}
 button{
-background:#111;
-color:white;
-cursor:pointer
+  background:#17324d;
+  color:white;
+  cursor:pointer
 }
-
-main{
-max-width:900px;
-margin:auto;
-padding:20px
-}
-
-.card{
-background:white;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 4px 18px #ddd
-}
-
-.card img{
-width:100%;
-height:400px;
-object-fit:cover
-}
-
-.content{
-padding:28px
-}
-
-.category{
-font-size:13px;
-font-weight:bold;
-color:#777;
-text-transform:uppercase
-}
-
-.content h2{
-font-size:30px;
-margin:8px 0
-}
-
 .lesson{
-background:#eef7ec;
-padding:18px;
-border-left:5px solid #333;
-margin:22px 0
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 3px 15px #ddd;
+  margin:25px 0
 }
-
-.actions{
-display:flex;
-gap:10px;
-flex-wrap:wrap
+.lesson img{
+  width:100%;
+  max-height:430px;
+  object-fit:cover
 }
-
+.content{padding:25px}
+.category{
+  display:inline-block;
+  background:#e8eef5;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:bold
+}
+.content h2{font-size:28px}
+.moral{
+  background:#f0f5f9;
+  padding:18px;
+  border-left:5px solid #17324d;
+  margin:20px 0
+}
+.categories{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0
+}
+.categories button{background:#fff;color:#17324d}
+.lessons-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px
+}
+.lesson-link{
+  display:block;
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  text-decoration:none;
+  color:#17324d;
+  font-weight:bold;
+  box-shadow:0 2px 8px #ddd
+}
 section{
-margin-top:40px
+  margin:45px 0
 }
-
-.links{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-gap:10px
-}
-
-.links a{
-background:white;
-padding:14px;
-border-radius:9px;
-text-decoration:none;
-color:#222;
-box-shadow:0 2px 8px #ddd
-}
-
-.about{
-background:white;
-padding:25px;
-border-radius:15px
-}
-
 footer{
-background:#111;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:50px
+  background:#17324d;
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+  margin-top:50px
 }
-
-@media(max-width:600px){
-
-header h1{font-size:30px}
-
-.hero h2{font-size:27px}
-
-.card img{height:280px}
-
-.content h2{font-size:26px}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
+</style></head><body><header>
 <h1>Picture Lessons</h1>
 <p>Every Picture Has a Lesson.</p>
-</header>
-
-<nav>
+</header><nav>
 <a href="index.html">Home</a>
-<a href="#categories">Categories</a>
 <a href="#lessons">Lessons</a>
+<a href="#categories">Categories</a>
 <a href="#about">About</a>
-</nav>
-
-<div class="hero">
-
+</nav><main class="container"><section class="hero">
 <h2>Look Beyond the Picture</h2>
-
 <p>
-Every picture tells a story. Every story can teach us something.
-Explore simple lessons about life, family, education, farming, kindness,
-community, culture and nature.
-</p>
-
-</div>
-
-<div class="search">
-
-<input id="search" placeholder="Search lessons...">
-
-<select id="category">
-
-<option value="">All Categories</option>
-<option>Farming</option>
-<option>Family</option>
-<option>Education</option>
-<option>Community</option>
-<option>Kindness</option>
-<option>Nature</option>
-<option>Culture</option>
-<option>Responsibility</option>
-<option>Patience</option>
-<option>Courage</option>
-<option>Leadership</option>
-<option>Hard Work</option>
-
+Everyday life contains lessons about patience, family, education,
+kindness, farming, culture, leadership and community.
+</p><div class="controls">
+<input id="searchBox" type="search" placeholder="Search lessons...">
+<select id="categorySelect">
+<option value="all">All Categories</option>
+<option value="Farming">Farming</option>
+<option value="Family">Family</option>
+<option value="Education">Education</option>
+<option value="Community">Community</option>
+<option value="Patience">Patience</option>
+<option value="Kindness">Kindness</option>
+<option value="Culture">Culture</option>
+<option value="Nature">Nature</option>
+<option value="Courage">Courage</option>
+<option value="Leadership">Leadership</option>
+<option value="Responsibility">Responsibility</option>
+<option value="Hard Work">Hard Work</option>
 </select>
-
-<button onclick="findLesson()">Search</button>
-
-</div>
-
-<main>
-
-<div class="card">
-
-<img id="pic" src="" alt="Picture Lesson">
-
-<div class="content">
-
-<div class="category" id="cat"></div>
-
-<h2 id="title"></h2>
-
-<p id="text"></p>
-
-<div class="lesson">
-<strong>🌱 The Lesson</strong>
-<p id="moral"></p>
-</div>
-
-<div class="actions">
-
 <button onclick="randomLesson()">🎲 Another Lesson</button>
-
-<button onclick="saveLesson()">❤️ Save</button>
-
-<button onclick="shareLesson()">📤 Share</button>
+</div>
+</section><section id="lessonDisplay" class="lesson"></section><section id="categories">
+<h2>Explore Lessons by Category</h2><div class="categories">
+<button onclick="filterLessons('Farming')">🌱 Farming</button>
+<button onclick="filterLessons('Family')">❤️ Family</button>
+<button onclick="filterLessons('Education')">📚 Education</button>
+<button onclick="filterLessons('Community')">🤝 Community</button>
+<button onclick="filterLessons('Kindness')">💛 Kindness</button>
+<button onclick="filterLessons('Nature')">🌏 Nature</button>
+<button onclick="filterLessons('Culture')">🌺 Culture</button>
+<button onclick="filterLessons('Responsibility')">⭐ Responsibility</button>
+</div>
+</section><section id="lessons">
+<h2>Explore All 20 Picture Lessons</h2><div class="lessons-grid"><a class="lesson-link" href="farming-patience.html">The Farmer's Patience</a>
+<a class="lesson-link" href="mothers-hard-work.html">A Mother's Hard Work</a>
+<a class="lesson-link" href="education-opens-doors.html">Education Opens Doors</a>
+<a class="lesson-link" href="together-we-are-stronger.html">Together We Are Stronger</a>
+<a class="lesson-link" href="fishermans-patience.html">The Fisherman's Patience</a>
+<a class="lesson-link" href="sharing-the-harvest.html">Sharing the Harvest</a>
+<a class="lesson-link" href="wisdom-from-elders.html">Wisdom From Elders</a>
+<a class="lesson-link" href="caring-for-the-land.html">Caring for the Land</a>
+<a class="lesson-link" href="starting-again.html">Starting Again</a>
+<a class="lesson-link" href="village-responsibility.html">Our Village, Our Responsibility</a>
+<a class="lesson-link" href="the-coconut-tree.html">The Coconut Tree</a>
+<a class="lesson-link" href="village-canoe.html">The Village Canoe</a>
+<a class="lesson-link" href="walk-to-school.html">The Walk to School</a>
+<a class="lesson-link" href="garden-to-market.html">From Garden to Market</a>
+<a class="lesson-link" href="helping-a-neighbour.html">Helping a Neighbour</a>
+<a class="lesson-link" href="hard-work-builds-future.html">Hard Work Builds a Future</a>
+<a class="lesson-link" href="preparing-for-rain.html">Preparing for Rain</a>
+<a class="lesson-link" href="teaching-next-generation.html">Teaching the Next Generation</a>
+<a class="lesson-link" href="respecting-the-ocean.html">Respecting the Ocean</a>
+<a class="lesson-link" href="providing-for-family.html">Providing for the Family</a>
 
 </div>
-
-</div>
-
-</div>
-
-
-<section id="categories">
-
-<h2>Explore Categories</h2>
-
-<div class="links">
-
-<a href="#" onclick="filter('Farming')">🌱 Farming</a>
-<a href="#" onclick="filter('Education')">📚 Education</a>
-<a href="#" onclick="filter('Family')">❤️ Family</a>
-<a href="#" onclick="filter('Community')">🤝 Community</a>
-<a href="#" onclick="filter('Kindness')">💛 Kindness</a>
-<a href="#" onclick="filter('Nature')">🌊 Nature</a>
-<a href="#" onclick="filter('Culture')">🌏 Culture</a>
-<a href="#" onclick="filter('Responsibility')">⭐ Responsibility</a>
-
-</div>
-
-</section>
-
-
-<section id="lessons">
-
-<h2>📚 All Picture Lessons</h2>
-
-<div class="links">
-
-<a href="farming-patience.html">The Farmer's Patience</a>
-<a href="mothers-hard-work.html">A Mother's Hard Work</a>
-<a href="education-opens-doors.html">Education Opens Doors</a>
-<a href="together-we-are-stronger.html">Together We Are Stronger</a>
-<a href="fishermans-patience.html">The Fisherman's Patience</a>
-<a href="sharing-the-harvest.html">Sharing the Harvest</a>
-<a href="wisdom-from-elders.html">Wisdom From Elders</a>
-<a href="caring-for-the-land.html">Caring for the Land</a>
-<a href="starting-again.html">Starting Again</a>
-<a href="village-responsibility.html">Our Village, Our Responsibility</a>
-<a href="the-coconut-tree.html">The Coconut Tree</a>
-<a href="village-canoe.html">The Village Canoe</a>
-<a href="walk-to-school.html">The Walk to School</a>
-<a href="garden-to-market.html">From Garden to Market</a>
-<a href="helping-a-neighbour.html">Helping a Neighbour</a>
-<a href="hard-work-builds-future.html">Hard Work Builds a Future</a>
-<a href="preparing-for-rain.html">Preparing for Rain</a>
-<a href="teaching-next-generation.html">Teaching the Next Generation</a>
-<a href="respecting-the-ocean.html">Respecting the Ocean</a>
-<a href="providing-for-family.html">Providing for the Family</a>
-
-</div>
-
-</section>
-
-
-<section class="about" id="about">
-
-<h2>About Picture Lessons</h2>
-
-<p>
-Picture Lessons turns everyday pictures into simple, memorable lessons
-about life and the world around us.
+</section><section id="about">
+<h2>About Picture Lessons</h2><p>
+Picture Lessons is a visual storytelling website built around one simple
+idea: <strong>Every Picture Has a Lesson.</strong>
+</p><p>
+Our lessons explore everyday experiences and the values behind them,
+including patience, education, family, farming, kindness, culture,
+responsibility, courage and community.
+</p><p>
+The goal is to make learning simple, memorable and accessible to people
+of different ages and backgrounds.
 </p>
-
-<p>
-<strong>Every Picture Has a Lesson.</strong>
-</p>
-
-</section>
-
-</main>
-
-
-<footer>
-
+</section></main><footer>
 <p>© 2026 Picture Lessons</p>
 <p>Every picture has a lesson.</p>
+</footer><script>
 
-</footer>
+const lessons = [
 
+{
+title:"The Farmer's Patience",
+category:"Farming",
+image:"https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80",
+text:"A farmer plants seeds and patiently waits for them to grow.",
+moral:"Good results often require patience and consistent work.",
+link:"farming-patience.html"
+},
 
-<script>
+{
+title:"A Mother's Hard Work",
+category:"Family",
+image:"https://images.unsplash.com/photo-1491013516836-7db643ee125a?auto=format&fit=crop&w=1200&q=80",
+text:"A mother works every day to care for her family.",
+moral:"Love is often shown through responsibility and sacrifice.",
+link:"mothers-hard-work.html"
+},
 
-const lessons=[
+{
+title:"Education Opens Doors",
+category:"Education",
+image:"https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+text:"A child walks toward school carrying the hope of a better future.",
+moral:"Education can create opportunities for the future.",
+link:"education-opens-doors.html"
+},
 
-["The Work Behind the Harvest","Farming",
-"https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80",
-"A farmer's work begins long before the harvest.",
-"Good results require patience, preparation and consistent effort."],
+{
+title:"Together We Are Stronger",
+category:"Community",
+image:"https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+text:"People working together can accomplish things that are difficult alone.",
+moral:"Cooperation makes communities stronger.",
+link:"together-we-are-stronger.html"
+},
 
-["A Mother's Hard Work","Family",
-"https://images.unsplash.com/photo-1491013516836-7db643ee125a?auto=format&fit=crop&w=1200&q=80",
-"Family life includes many quiet acts of care.",
-"Small acts of care can make a big difference."],
+{
+title:"The Fisherman's Patience",
+category:"Patience",
+image:"https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
+text:"A fisherman waits quietly for the right moment.",
+moral:"Patience can be more powerful than rushing.",
+link:"fishermans-patience.html"
+},
 
-["Education Opens Doors","Education",
-"https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
-"Learning can create new opportunities.",
-"Knowledge can open doors to new possibilities."],
+{
+title:"Sharing the Harvest",
+category:"Kindness",
+image:"https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80",
+text:"A harvest becomes more meaningful when it is shared with others.",
+moral:"Sharing strengthens relationships and communities.",
+link:"sharing-the-harvest.html"
+},
 
-["Together We Are Stronger","Community",
-"https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
-"People can achieve more when they cooperate.",
-"Working together can help communities achieve shared goals."],
+{
+title:"Wisdom From Elders",
+category:"Culture",
+image:"https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+text:"Older generations carry knowledge built from years of experience.",
+moral:"Listening to experienced people can help younger generations learn.",
+link:"wisdom-from-elders.html"
+},
 
-["The Fisherman's Patience","Patience",
-"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
-"Fishing requires patience and observation.",
-"Patience helps us continue when results take time."],
+{
+title:"Caring for the Land",
+category:"Nature",
+image:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+text:"The land provides food, resources and a place for communities to live.",
+moral:"Taking care of nature protects the future.",
+link:"caring-for-the-land.html"
+},
 
-["Sharing the Harvest","Kindness",
-"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
-"Sharing food can strengthen relationships.",
-"Generosity can strengthen communities."],
+{
+title:"Starting Again",
+category:"Courage",
+image:"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
+text:"Sometimes life requires us to begin again after failure or difficulty.",
+moral:"Failure does not have to be the end of the journey.",
+link:"starting-again.html"
+},
 
-["Wisdom From Elders","Culture",
-"https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=80",
-"Older generations can pass knowledge to younger people.",
-"Experience can teach lessons that help future generations."],
+{
+title:"Our Village, Our Responsibility",
+category:"Leadership",
+image:"https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=1200&q=80",
+text:"A strong village depends on people taking responsibility for their community.",
+moral:"Leadership begins with serving others.",
+link:"village-responsibility.html"
+},
 
-["Caring for the Land","Nature",
-"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
-"The land provides resources communities depend on.",
-"Caring for nature helps protect resources for the future."],
+{
+title:"The Coconut Tree",
+category:"Nature",
+image:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+text:"The coconut tree can provide food, materials and other useful resources.",
+moral:"Natural resources are valuable and should be respected.",
+link:"the-coconut-tree.html"
+},
 
-["Starting Again","Courage",
-"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
-"Setbacks do not have to end the journey.",
-"A new beginning can start with one small step."],
+{
+title:"The Village Canoe",
+category:"Community",
+image:"https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+text:"A canoe moves forward when everyone works together.",
+moral:"A shared journey requires teamwork.",
+link:"village-canoe.html"
+},
 
-["Our Village, Our Responsibility","Leadership",
-"https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80",
-"Communities depend on people willing to take responsibility.",
-"Leadership includes serving others and accepting responsibility."],
+{
+title:"The Walk to School",
+category:"Education",
+image:"https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+text:"Walking to school can require determination and commitment.",
+moral:"Small daily efforts can build a better future.",
+link:"walk-to-school.html"
+},
 
-["The Coconut Tree","Nature",
-"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-"Nature can provide many useful resources.",
-"Natural resources should be respected and used responsibly."],
+{
+title:"From Garden to Market",
+category:"Farming",
+image:"https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
+text:"Farmers turn their work into food and income for their families.",
+moral:"Hard work can create value for both families and communities.",
+link:"garden-to-market.html"
+},
 
-["The Village Canoe","Community",
-"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
-"A canoe can represent a shared journey.",
-"Every person's contribution can help move a community forward."],
+{
+title:"Helping a Neighbour",
+category:"Kindness",
+image:"https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200&q=80",
+text:"A small act of help can make a difficult day easier for someone nearby.",
+moral:"Kindness can strengthen a community.",
+link:"helping-a-neighbour.html"
+},
 
-["The Walk to School","Education",
-"https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
-"Going to school can represent a journey toward knowledge.",
-"Every step toward learning can create new possibilities."],
+{
+title:"Hard Work Builds a Future",
+category:"Hard Work",
+image:"https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+text:"Progress often comes from continuing to work even when results are slow.",
+moral:"Consistency and discipline can create long-term progress.",
+link:"hard-work-builds-future.html"
+},
 
-["From Garden to Market","Farming",
-"https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80",
-"Farmers invest time and effort before food reaches the market.",
-"Good results come from many small efforts."],
+{
+title:"Preparing for Rain",
+category:"Responsibility",
+image:"https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&w=1200&q=80",
+text:"Preparing before problems arrive can make difficult situations easier.",
+moral:"Preparation is an important part of responsibility.",
+link:"preparing-for-rain.html"
+},
 
-["Helping a Neighbour","Kindness",
-"https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1200&q=80",
-"A small act of help can make someone's day easier.",
-"Kindness can make a meaningful difference."],
+{
+title:"Teaching the Next Generation",
+category:"Education",
+image:"https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+text:"Knowledge becomes stronger when it is passed from one generation to another.",
+moral:"Teaching others helps knowledge and wisdom continue.",
+link:"teaching-next-generation.html"
+},
 
-["Hard Work Builds a Future","Hard Work",
-"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-"Progress is often built through consistent effort.",
-"Today's effort can create tomorrow's opportunities."],
+{
+title:"Respecting the Ocean",
+category:"Nature",
+image:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+text:"The ocean supports people, wildlife and communities.",
+moral:"Protecting the ocean protects future generations.",
+link:"respecting-the-ocean.html"
+},
 
-["Preparing for Rain","Responsibility",
-"https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=1200&q=80",
-"Preparation can make challenges easier to handle.",
-"Preparing today can help us handle tomorrow."],
-
-["Teaching the Next Generation","Education",
-"https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
-"Knowledge becomes valuable when it is shared.",
-"Teaching others helps prepare the next generation."],
-
-["Respecting the Ocean","Nature",
-"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-"The ocean supports people and wildlife.",
-"Caring for nature protects resources for the future."],
-
-["Providing for the Family","Responsibility",
-"https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=80",
-"Families depend on different forms of support.",
-"Responsibility means caring for the people and duties entrusted to us."]
+{
+title:"Providing for the Family",
+category:"Responsibility",
+image:"https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=1200&q=80",
+text:"Providing for a family requires responsibility, planning and persistence.",
+moral:"Responsibility means doing what is needed even when it is difficult.",
+link:"providing-for-family.html"
+}
 
 ];
 
-
 let current=0;
-let list=lessons;
 
+function showLesson(list=lessons,index=0){
 
-function show(i){
-
-current=i;
-
-let l=list[i];
-
-pic.src=l[2];
-pic.alt=l[0];
-
-cat.textContent=l[1];
-title.textContent=l[0];
-text.textContent=l[3];
-moral.textContent=l[4];
-
+if(!list.length){
+document.getElementById("lessonDisplay").innerHTML="<div class='content'><h2>No lesson found</h2><p>Try another search or category.</p></div>";
+return;
 }
 
+current=index%list.length;
+const l=list[current];
+
+document.getElementById("lessonDisplay").innerHTML=`
+<img src="${l.image}" alt="${l.title}">
+<div class="content">
+<span class="category">${l.category}</span>
+<h2>${l.title}</h2>
+<p>${l.text}</p>
+<div class="moral">
+<strong>💡 Lesson:</strong>
+<p>${l.moral}</p>
+</div>
+<a href="${l.link}">Read the full lesson →</a>
+</div>`;
+}
 
 function randomLesson(){
-
-if(!list.length)return;
-
-show(Math.floor(Math.random()*list.length));
-
+showLesson(lessons,Math.floor(Math.random()*lessons.length));
 }
 
+function filterLessons(category){
 
-function findLesson(){
+document.getElementById("categorySelect").value=category;
 
-let q=search.value.toLowerCase();
-let c=category.value;
+if(category==="all"){
+showLesson(lessons,0);
+return;
+}
 
-list=lessons.filter(l=>
+const results=lessons.filter(l=>l.category===category);
+showLesson(results,0);
+}
 
-(!q || l.join(" ").toLowerCase().includes(q)) &&
-(!c || l[1]===c)
+function searchLessons(){
 
+const query=document.getElementById("searchBox").value.toLowerCase();
+const category=document.getElementById("categorySelect").value;
+
+let results=lessons.filter(l=>
+(
+l.title.toLowerCase().includes(query) ||
+l.category.toLowerCase().includes(query) ||
+l.text.toLowerCase().includes(query) ||
+l.moral.toLowerCase().includes(query)
+) &&
+(category==="all" || l.category===category)
 );
 
-show(0);
-
+showLesson(results,0);
 }
 
+document.getElementById("searchBox").addEventListener("input",searchLessons);
+document.getElementById("categorySelect").addEventListener("change",searchLessons);
 
-function filter(c){
+showLesson();
 
-category.value=c;
-search.value="";
-list=lessons.filter(l=>l[1]===c);
-show(0);
-
-}
-
-
-function saveLesson(){
-
-let saved=JSON.parse(localStorage.getItem("savedLessons")||"[]");
-
-let l=list[current];
-
-if(!saved.includes(l[0])) saved.push(l[0]);
-
-localStorage.setItem("savedLessons",JSON.stringify(saved));
-
-alert("Lesson saved ❤️");
-
-}
-
-
-function shareLesson(){
-
-if(navigator.share){
-
-navigator.share({
-
-title:title.textContent,
-text:moral.textContent,
-url:location.href
-
-});
-
-}else{
-
-navigator.clipboard.writeText(location.href);
-
-alert("Link copied!");
-
-}
-
-}
-
-
-show(0);
-
-</script>
-
-</body>
+</script></body>
 </html>
