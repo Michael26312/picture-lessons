@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://michael26312.github.io/picture-lessons/sitemap.xml
