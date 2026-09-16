@@ -1,175 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Picture Lessons - Every Picture Has a Lesson</title>
+<title>Picture Lessons | Every Picture Has a Lesson</title>
 
-  <meta name="description" content="Discover meaningful life lessons through powerful pictures, stories and reflections.">
+<meta name="description" content="Discover meaningful life lessons through pictures, stories and reflections about family, farming, community, education and everyday life.">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #222;
-    }
+<meta name="keywords" content="moral lessons, life lessons, inspirational pictures, picture lessons, farming lessons, family lessons, PNG stories">
 
-    header {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
+<meta property="og:title" content="Picture Lessons">
+<meta property="og:description" content="Every picture has a lesson. Discover stories, wisdom and meaningful life lessons.">
+<meta property="og:type" content="website">
 
-    header h1 {
-      margin: 0;
-      font-size: 30px;
-    }
+<style>
 
-    header p {
-      margin-top: 8px;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 15px;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    .lesson-card {
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
 
-    .lesson-card img {
-      width: 100%;
-      display: block;
-      max-height: 500px;
-      object-fit: cover;
-    }
+header {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
 
-    .content {
-      padding: 25px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
 
-    .category {
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #777;
-    }
+header p {
+  margin: 5px 0 0;
+  opacity: .85;
+}
 
-    h2 {
-      font-size: 28px;
-    }
+nav {
+  background: white;
+  padding: 14px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
 
-    .moral {
-      background: #f0f7ed;
-      padding: 18px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
+nav a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
 
-    .reflection {
-      margin-top: 20px;
-      font-style: italic;
-      color: #555;
-    }
+.hero {
+  text-align: center;
+  padding: 45px 20px 30px;
+}
 
-    button {
-      display: block;
-      margin: 25px auto 5px;
-      padding: 15px 25px;
-      border: none;
-      border-radius: 30px;
-      background: #222;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
+.hero h2 {
+  font-size: 36px;
+  margin: 0 0 10px;
+}
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #222;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #666;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input,
+select {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.lesson-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,.1);
+}
+
+.lesson-card img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  padding: 28px;
+}
+
+.category {
+  color: #777;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.content h2 {
+  font-size: 30px;
+  margin: 8px 0 15px;
+}
+
+.moral {
+  background: #eef7ec;
+  border-left: 5px solid #333;
+  padding: 18px;
+  margin: 22px 0;
+  border-radius: 8px;
+}
+
+.moral strong {
+  font-size: 18px;
+}
+
+.reflection {
+  background: #f7f7f7;
+  padding: 18px;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+button {
+  border: none;
+  padding: 13px 18px;
+  border-radius: 25px;
+  background: #111;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+.secondary {
+  background: #666;
+}
+
+.categories {
+  margin-top: 45px;
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.category-button {
+  background: white;
+  color: #222;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: white;
+  margin: 0 8px;
+}
+
+.message {
+  text-align: center;
+  margin: 15px;
+  font-weight: bold;
+}
+
+@media(max-width:600px) {
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .lesson-card img {
+    height: 300px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 25px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+  }
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Picture Lessons</h1>
-  <p>Every Picture Has a Lesson.</p>
+
+<h1>Picture Lessons</h1>
+
+<p>Every Picture Has a Lesson.</p>
+
 </header>
 
-<main>
+<nav>
 
-  <div class="lesson-card">
+<a href="#home">Home</a>
+<a href="#lesson">Lesson</a>
+<a href="#categories">Categories</a>
+<a href="#saved">Saved</a>
+<a href="#about">About</a>
 
-    <img
-      src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80"
-      alt="Person working in a farm field"
-    >
+</nav>
 
-    <div class="content">
+<section class="hero" id="home">
 
-      <div class="category">
-        Farming • Hard Work
-      </div>
+<h2>Look Beyond the Picture</h2>
 
-      <h2>The Work Behind the Harvest</h2>
+<p>
+Discover meaningful lessons hidden in farming, family,
+community, education, nature and everyday life.
+</p>
 
-      <p>
-        A harvest does not happen in one day.
-        Farmers prepare the land, plant the seeds,
-        care for the crops and wait patiently.
-      </p>
+</section>
 
-      <div class="moral">
+<main class="container">
 
-        <strong>🌱 Moral Lesson: Hard Work</strong>
+<div class="controls">
 
-        <p>
-          Good results often come from small efforts
-          repeated every day. Never underestimate the
-          value of patience and consistent work.
-        </p>
+<input
+type="text"
+id="search"
+placeholder="🔎 Search lessons..."
+oninput="searchLessons()"
+>
 
-      </div>
+<select id="categoryFilter" onchange="filterLessons()">
 
-      <div class="reflection">
-        💭 Reflection:
-        What are you working on today that may produce
-        results tomorrow?
-      </div>
+<option value="all">All Categories</option>
 
-      <button onclick="showMessage()">
-        🎲 Show Me Another Lesson
-      </button>
+<option value="Hard Work">Hard Work</option>
+<option value="Family">Family</option>
+<option value="Farming">Farming</option>
+<option value="Education">Education</option>
+<option value="Community">Community</option>
+<option value="Kindness">Kindness</option>
+<option value="Patience">Patience</option>
+<option value="Responsibility">Responsibility</option>
 
-    </div>
+</select>
 
-  </div>
+</div>
+
+<div id="lesson"></div>
+
+<div class="categories" id="categories">
+
+<h2>Explore Lessons</h2>
+
+<div class="category-grid">
+
+<button class="category-button" onclick="chooseCategory('Hard Work')">
+💪 Hard Work
+</button>
+
+<button class="category-button" onclick="chooseCategory('Family')">
+❤️ Family
+</button>
+
+<button class="category-button" onclick="chooseCategory('Farming')">
+🌱 Farming
+</button>
+
+<button class="category-button" onclick="chooseCategory('Education')">
+📚 Education
+</button>
+
+<button class="category-button" onclick="chooseCategory('Community')">
+🤝 Community
+</button>
+
+<button class="category-button" onclick="chooseCategory('Kindness')">
+❤️ Kindness
+</button>
+
+<button class="category-button" onclick="chooseCategory('Patience')">
+🌿 Patience
+</button>
+
+<button class="category-button" onclick="chooseCategory('Responsibility')">
+⭐ Responsibility
+</button>
+
+</div>
+
+</div>
 
 </main>
 
+<section id="saved" class="container">
+
+<h2>❤️ Saved Lessons</h2>
+
+<div id="savedLessons">
+<p>You haven't saved any lessons yet.</p>
+</div>
+
+</section>
+
+<section id="about" class="container">
+
+<h2>About Picture Lessons</h2>
+
+<p>
+Picture Lessons is a visual storytelling project created to
+show that ordinary moments can contain extraordinary lessons.
+</p>
+
+<p>
+A farmer, a parent, a teacher, a child, a fisherman or a
+community working together can teach us about perseverance,
+responsibility, kindness, patience and hope.
+</p>
+
+<p>
+Our goal is to connect powerful photographs with meaningful
+stories and reflections that people can learn from and share.
+</p>
+
+</section>
+
+<div class="message" id="message"></div>
+
 <footer>
-  <p>© 2026 Picture Lessons</p>
-  <p>Every Picture Has a Lesson.</p>
+
+<p>© 2026 Picture Lessons</p>
+
+<p>Every picture has a lesson.</p>
+
+<p>
+
+<a href="#about">About</a>
+
+<a href="#categories">Categories</a>
+
+<a href="#saved">Saved</a>
+
+</p>
+
 </footer>
 
 <script>
 
-function showMessage() {
-  alert("More lessons are coming soon!");
+const lessons = [
+
+{
+title: "The Work Behind the Harvest",
+category: "Farming",
+image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+alt: "Person working in an agricultural field",
+story: "A harvest does not happen in one day. Farmers prepare the land, plant the seeds, care for the crops and wait patiently.",
+moral: "Good results often come from small efforts repeated every day.",
+reflection: "What are you working on today that may produce results tomorrow?"
+},
+
+{
+title: "A Family's Strength",
+category: "Family",
+image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=80",
+alt: "Family spending time together",
+story: "Families may face difficult days, but standing together can make difficult moments easier to overcome.",
+moral: "Strong families are built through love, patience and support.",
+reflection: "How can you make your family stronger today?"
+},
+
+{
+title: "Education Opens Doors",
+category: "Education",
+image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+alt: "Students learning in a classroom",
+story: "Learning gives young people knowledge that can help them understand the world and create new opportunities.",
+moral: "Education is an investment that can change a person's future.",
+reflection: "What new thing can you learn today?"
+},
+
+{
+title: "Together We Are Stronger",
+category: "Community",
+image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+alt: "People spending time together",
+story: "When people cooperate, tasks that seem difficult for one person can become possible for many.",
+moral: "Cooperation creates strength that individuals may not have alone.",
+reflection: "Who could you work with to solve a problem?"
+},
+
+{
+title: "Patience Takes Time",
+category: "Patience",
+image: "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1200&q=80",
+alt: "Green plant growing",
+story: "A small plant needs time, water and care before it becomes strong.",
+moral: "Growth takes time. Do not give up simply because the results are not immediate.",
+reflection: "Where in your life do you need more patience?"
+},
+
+{
+title: "Kindness Costs Little",
+category: "Kindness",
+image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=80",
+alt: "People helping each other",
+story: "A small act of kindness can make someone's difficult day a little easier.",
+moral: "Kindness can have a much greater impact than we realize.",
+reflection: "Who could you help today?"
+},
+
+{
+title: "The Responsibility of a Farmer",
+category: "Responsibility",
+image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80",
+alt: "Farmer working with crops",
+story: "Farmers depend on careful preparation, regular work and responsible care for their crops.",
+moral: "Responsibility means taking care of what has been placed in your hands.",
+reflection: "What responsibility should you take more seriously?"
+},
+
+{
+title: "A Mother's Sacrifice",
+category: "Family",
+image: "https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?auto=format&fit=crop&w=1200&q=80",
+alt: "Mother and child",
+story: "Parents often make sacrifices so that their children can have opportunities they did not have.",
+moral: "Love is often demonstrated through sacrifice and action.",
+reflection: "Who has sacrificed something for your future?"
+},
+
+{
+title: "The Fisherman's Patience",
+category: "Patience",
+image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
+alt: "Ocean and fisherman",
+story: "A fisherman cannot control the sea or guarantee the catch. He can only prepare, work and remain patient.",
+moral: "We cannot control everything, but we can control how we respond.",
+reflection: "What situation requires patience from you?"
+},
+
+{
+title: "A New Generation",
+category: "Education",
+image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+alt: "Young person learning",
+story: "Every generation has an opportunity to learn from the past while building something better for the future.",
+moral: "Knowledge becomes more valuable when it is passed to others.",
+reflection: "What valuable lesson could you teach someone younger?"
 }
+
+];
+
+let currentLesson = 0;
+
+function displayLesson(index) {
+
+currentLesson = index;
+
+const lesson = lessons[index];
+
+document.getElementById("lesson").innerHTML = `
+
+<article class="lesson-card">
+
+<img
+src="${lesson.image}"
+alt="${lesson.alt}"
+loading="lazy"
+>
+
+<div class="content">
+
+<div class="category">
+${lesson.category}
+</div>
+
+<h2>${lesson.title}</h2>
+
+<p>
+${lesson.story}
+</p>
+
+<div class="moral">
+
+<strong>🌱 Moral Lesson</strong>
+
+<p>
+${lesson.moral}
+</p>
+
+</div>
+
+<div class="reflection">
+
+💭 <strong>Reflection:</strong>
+
+${lesson.reflection}
+
+</div>
+
+<div class="buttons">
+
+<button onclick="randomLesson()">
+🎲 Another Lesson
+</button>
+
+<button class="secondary" onclick="saveLesson()">
+❤️ Save
+</button>
+
+<button class="secondary" onclick="shareLesson()">
+📤 Share
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+`;
+
+}
+
+function randomLesson() {
+
+let next;
+
+do {
+
+next = Math.floor(Math.random() * lessons.length);
+
+} while (next === currentLesson && lessons.length > 1);
+
+displayLesson(next);
+
+window.scrollTo({
+top: document.getElementById("lesson").offsetTop - 80,
+behavior: "smooth"
+});
+
+}
+
+function saveLesson() {
+
+let saved =
+JSON.parse(localStorage.getItem("pictureLessonsSaved") || "[]");
+
+if (!saved.includes(currentLesson)) {
+
+saved.push(currentLesson);
+
+localStorage.setItem(
+"pictureLessonsSaved",
+JSON.stringify(saved)
+);
+
+showMessage("❤️ Lesson saved!");
+
+} else {
+
+showMessage("This lesson is already saved.");
+
+}
+
+displaySaved();
+
+}
+
+function displaySaved() {
+
+const box = document.getElementById("savedLessons");
+
+let saved =
+JSON.parse(localStorage.getItem("pictureLessonsSaved") || "[]");
+
+if (saved.length === 0) {
+
+box.innerHTML =
+"<p>You haven't saved any lessons yet.</p>";
+
+return;
+
+}
+
+box.innerHTML = saved.map(index => `
+
+<div style="background:white;padding:15px;margin:10px 0;border-radius:10px">
+
+<strong>${lessons[index].title}</strong>
+
+<br>
+
+<button onclick="displayLesson(${index});window.scrollTo(0,0)">
+Read Lesson
+</button>
+
+</div>
+
+`).join("");
+
+}
+
+function shareLesson() {
+
+const lesson = lessons[currentLesson];
+
+const text =
+lesson.title +
+" — " +
+lesson.moral +
+" | Picture Lessons";
+
+if (navigator.share) {
+
+navigator.share({
+
+title: lesson.title,
+text: text,
+url: window.location.href
+
+});
+
+} else {
+
+navigator.clipboard.writeText(
+window.location.href
+);
+
+showMessage("🔗 Link copied!");
+
+}
+
+}
+
+function searchLessons() {
+
+const query =
+document.getElementById("search").value.toLowerCase();
+
+const results = lessons.filter(lesson =>
+
+lesson.title.toLowerCase().includes(query) ||
+lesson.category.toLowerCase().includes(query) ||
+lesson.story.toLowerCase().includes(query) ||
+lesson.moral.toLowerCase().includes(query)
+
+);
+
+if (results.length > 0) {
+
+const index =
+lessons.indexOf(results[0]);
+
+displayLesson(index);
+
+}
+
+}
+
+function filterLessons() {
+
+const category =
+document.getElementById("categoryFilter").value;
+
+if (category === "all") {
+
+randomLesson();
+
+return;
+
+}
+
+const results =
+lessons.filter(
+lesson => lesson.category === category
+);
+
+if (results.length > 0) {
+
+const index =
+lessons.indexOf(results[0]);
+
+displayLesson(index);
+
+}
+
+}
+
+function chooseCategory(category) {
+
+document.getElementById("categoryFilter").value =
+category;
+
+filterLessons();
+
+document.getElementById("lesson").scrollIntoView({
+behavior: "smooth"
+});
+
+}
+
+function showMessage(text) {
+
+const message =
+document.getElementById("message");
+
+message.textContent = text;
+
+setTimeout(() => {
+
+message.textContent = "";
+
+}, 2500);
+
+}
+
+displayLesson(0);
+
+displaySaved();
 
 </script>
 
