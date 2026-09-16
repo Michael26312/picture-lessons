@@ -1,14 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Picture Lessons</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Picture Lessons - Every Picture Has a Lesson</title>
+
+  <meta name="description" content="Discover meaningful life lessons through powerful pictures, stories and reflections.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 8px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 15px;
+    }
+
+    .lesson-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .lesson-card img {
+      width: 100%;
+      display: block;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 25px;
+    }
+
+    .category {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #777;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .moral {
+      background: #f0f7ed;
+      padding: 18px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .reflection {
+      margin-top: 20px;
+      font-style: italic;
+      color: #555;
+    }
+
+    button {
+      display: block;
+      margin: 25px auto 5px;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 30px;
+      background: #222;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
+<header>
   <h1>Picture Lessons</h1>
-
   <p>Every Picture Has a Lesson.</p>
+</header>
+
+<main>
+
+  <div class="lesson-card">
+
+    <img
+      src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80"
+      alt="Person working in a farm field"
+    >
+
+    <div class="content">
+
+      <div class="category">
+        Farming • Hard Work
+      </div>
+
+      <h2>The Work Behind the Harvest</h2>
+
+      <p>
+        A harvest does not happen in one day.
+        Farmers prepare the land, plant the seeds,
+        care for the crops and wait patiently.
+      </p>
+
+      <div class="moral">
+
+        <strong>🌱 Moral Lesson: Hard Work</strong>
+
+        <p>
+          Good results often come from small efforts
+          repeated every day. Never underestimate the
+          value of patience and consistent work.
+        </p>
+
+      </div>
+
+      <div class="reflection">
+        💭 Reflection:
+        What are you working on today that may produce
+        results tomorrow?
+      </div>
+
+      <button onclick="showMessage()">
+        🎲 Show Me Another Lesson
+      </button>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Picture Lessons</p>
+  <p>Every Picture Has a Lesson.</p>
+</footer>
+
+<script>
+
+function showMessage() {
+  alert("More lessons are coming soon!");
+}
+
+</script>
 
 </body>
 </html>
