@@ -6,13 +6,7 @@
 
 <title>Picture Lessons | Every Picture Has a Lesson</title>
 
-<meta name="description" content="Discover meaningful life lessons through pictures, stories and reflections about family, farming, education, community, culture and everyday life.">
-
-<meta name="keywords" content="picture lessons, life lessons, moral lessons, PNG stories, Pacific stories, farming lessons, family lessons, educational stories">
-
-<meta property="og:title" content="Picture Lessons">
-<meta property="og:description" content="Every picture has a lesson. Discover stories, wisdom and meaningful life lessons.">
-<meta property="og:type" content="website">
+<meta name="description" content="Discover meaningful life lessons through pictures, stories, farming, family, education, culture and community.">
 
 <style>
 
@@ -20,23 +14,18 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f5f5f5;
   color: #222;
-  line-height: 1.6;
 }
 
 header {
   background: #111;
   color: white;
   text-align: center;
-  padding: 28px 15px;
+  padding: 30px 15px;
 }
 
 header h1 {
@@ -45,46 +34,44 @@ header h1 {
 }
 
 header p {
-  margin: 6px 0 0;
-  opacity: .85;
+  margin: 8px 0 0;
 }
 
 nav {
   background: white;
-  padding: 14px;
+  padding: 15px;
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 10;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  z-index: 5;
 }
 
 nav a {
   color: #222;
   text-decoration: none;
-  margin: 0 9px;
+  margin: 0 8px;
   font-weight: bold;
 }
 
 .hero {
   text-align: center;
-  padding: 48px 20px 32px;
+  padding: 45px 20px 25px;
 }
 
 .hero h2 {
-  font-size: 36px;
-  margin: 0 0 10px;
+  font-size: 34px;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  max-width: 700px;
-  margin: auto;
   color: #666;
+  max-width: 650px;
+  margin: auto;
   font-size: 18px;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 850px;
   margin: auto;
   padding: 20px;
 }
@@ -93,7 +80,6 @@ nav a {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-  flex-wrap: wrap;
 }
 
 input,
@@ -106,7 +92,6 @@ select {
 
 input {
   flex: 1;
-  min-width: 200px;
 }
 
 .lesson-card {
@@ -118,13 +103,13 @@ input {
 
 .lesson-card img {
   width: 100%;
-  height: 480px;
+  height: 450px;
   object-fit: cover;
   display: block;
 }
 
 .content {
-  padding: 28px;
+  padding: 25px;
 }
 
 .category {
@@ -132,28 +117,21 @@ input {
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: .5px;
 }
 
-.content h2 {
-  font-size: 30px;
-  margin: 8px 0 15px;
+h2 {
+  margin-top: 8px;
 }
 
 .moral {
   background: #eef7ec;
-  border-left: 5px solid #333;
   padding: 18px;
-  margin: 22px 0;
-  border-radius: 8px;
-}
-
-.moral strong {
-  font-size: 18px;
+  border-left: 5px solid #333;
+  margin: 20px 0;
 }
 
 .reflection {
-  background: #f7f7f7;
+  background: #f5f5f5;
   padding: 18px;
   border-radius: 8px;
   font-style: italic;
@@ -163,21 +141,16 @@ input {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 button {
-  border: none;
-  padding: 13px 18px;
-  border-radius: 25px;
+  border: 0;
   background: #111;
   color: white;
-  font-size: 15px;
+  padding: 13px 18px;
+  border-radius: 25px;
   cursor: pointer;
-}
-
-button:hover {
-  opacity: .8;
 }
 
 .secondary {
@@ -185,16 +158,12 @@ button:hover {
 }
 
 .categories {
-  margin-top: 45px;
-}
-
-.categories h2 {
-  text-align: center;
+  margin-top: 40px;
 }
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 10px;
 }
 
@@ -202,7 +171,6 @@ button:hover {
   background: white;
   color: #222;
   border: 1px solid #ddd;
-  border-radius: 10px;
 }
 
 .saved-card {
@@ -210,40 +178,42 @@ button:hover {
   padding: 15px;
   margin: 10px 0;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.06);
 }
 
 .about {
   background: white;
-  border-radius: 15px;
   padding: 25px;
-  margin-top: 30px;
+  border-radius: 15px;
 }
 
 footer {
   background: #111;
   color: white;
   text-align: center;
-  padding: 35px 20px;
-  margin-top: 50px;
+  padding: 30px;
+  margin-top: 40px;
 }
 
 footer a {
   color: white;
-  margin: 0 8px;
+  margin: 5px;
 }
 
 .message {
   text-align: center;
-  margin: 15px;
   font-weight: bold;
   min-height: 25px;
+  margin: 15px;
 }
 
 @media(max-width:600px) {
 
   .hero h2 {
     font-size: 28px;
+  }
+
+  .controls {
+    flex-direction: column;
   }
 
   .lesson-card img {
@@ -254,14 +224,9 @@ footer a {
     padding: 20px;
   }
 
-  .content h2 {
-    font-size: 25px;
-  }
-
   nav a {
     display: inline-block;
     margin: 5px;
-    font-size: 14px;
   }
 
 }
@@ -272,21 +237,16 @@ footer a {
 <body>
 
 <header>
-
 <h1>Picture Lessons</h1>
-
 <p>Every Picture Has a Lesson.</p>
-
 </header>
 
 <nav>
-
 <a href="#home">Home</a>
 <a href="#lesson">Lesson</a>
 <a href="#categories">Categories</a>
 <a href="#saved">Saved</a>
 <a href="#about">About</a>
-
 </nav>
 
 <section class="hero" id="home">
@@ -295,7 +255,7 @@ footer a {
 
 <p>
 Discover meaningful lessons hidden in farming, family,
-community, education, culture, nature and everyday life.
+education, culture, community and everyday life.
 </p>
 
 </section>
@@ -305,27 +265,26 @@ community, education, culture, nature and everyday life.
 <div class="controls">
 
 <input
-type="text"
 id="search"
+type="text"
 placeholder="🔎 Search lessons..."
-oninput="searchLessons()"
 >
 
-<select id="categoryFilter" onchange="filterLessons()">
+<select id="categoryFilter">
 
 <option value="all">All Categories</option>
-<option value="Hard Work">Hard Work</option>
-<option value="Family">Family</option>
 <option value="Farming">Farming</option>
+<option value="Family">Family</option>
 <option value="Education">Education</option>
 <option value="Community">Community</option>
 <option value="Kindness">Kindness</option>
 <option value="Patience">Patience</option>
-<option value="Responsibility">Responsibility</option>
 <option value="Culture">Culture</option>
 <option value="Nature">Nature</option>
 <option value="Courage">Courage</option>
+<option value="Responsibility">Responsibility</option>
 <option value="Leadership">Leadership</option>
+<option value="Hard Work">Hard Work</option>
 
 </select>
 
@@ -333,28 +292,28 @@ oninput="searchLessons()"
 
 <div id="lesson"></div>
 
-<div class="categories" id="categories">
+<section class="categories" id="categories">
 
 <h2>Explore Lessons</h2>
 
 <div class="category-grid">
 
-<button class="category-button" onclick="chooseCategory('Hard Work')">💪 Hard Work</button>
-<button class="category-button" onclick="chooseCategory('Family')">❤️ Family</button>
-<button class="category-button" onclick="chooseCategory('Farming')">🌱 Farming</button>
-<button class="category-button" onclick="chooseCategory('Education')">📚 Education</button>
-<button class="category-button" onclick="chooseCategory('Community')">🤝 Community</button>
-<button class="category-button" onclick="chooseCategory('Kindness')">❤️ Kindness</button>
-<button class="category-button" onclick="chooseCategory('Patience')">🌿 Patience</button>
-<button class="category-button" onclick="chooseCategory('Responsibility')">⭐ Responsibility</button>
-<button class="category-button" onclick="chooseCategory('Culture')">🌺 Culture</button>
-<button class="category-button" onclick="chooseCategory('Nature')">🌏 Nature</button>
-<button class="category-button" onclick="chooseCategory('Courage')">🛡️ Courage</button>
-<button class="category-button" onclick="chooseCategory('Leadership')">👑 Leadership</button>
+<button class="category-button" data-category="Farming">🌱 Farming</button>
+<button class="category-button" data-category="Family">❤️ Family</button>
+<button class="category-button" data-category="Education">📚 Education</button>
+<button class="category-button" data-category="Community">🤝 Community</button>
+<button class="category-button" data-category="Kindness">❤️ Kindness</button>
+<button class="category-button" data-category="Patience">🌿 Patience</button>
+<button class="category-button" data-category="Culture">🌺 Culture</button>
+<button class="category-button" data-category="Nature">🌏 Nature</button>
+<button class="category-button" data-category="Courage">🛡️ Courage</button>
+<button class="category-button" data-category="Leadership">👑 Leadership</button>
+<button class="category-button" data-category="Hard Work">💪 Hard Work</button>
+<button class="category-button" data-category="Responsibility">⭐ Responsibility</button>
 
 </div>
 
-</div>
+</section>
 
 </main>
 
@@ -363,7 +322,7 @@ oninput="searchLessons()"
 <h2>❤️ Saved Lessons</h2>
 
 <div id="savedLessons">
-<p>You haven't saved any lessons yet.</p>
+<p>No saved lessons yet.</p>
 </div>
 
 </section>
@@ -375,26 +334,20 @@ oninput="searchLessons()"
 <h2>About Picture Lessons</h2>
 
 <p>
-Picture Lessons is a visual storytelling project built around a simple idea:
+Picture Lessons is a visual storytelling project based on one simple idea:
 <strong>Every Picture Has a Lesson.</strong>
 </p>
 
 <p>
-A farmer, parent, teacher, child, fisherman or community can show us
-lessons about perseverance, responsibility, kindness, patience,
-culture and hope.
-</p>
-
-<p>
-Our goal is to connect meaningful photographs with stories and
-reflections that people can learn from and share.
+Ordinary moments in farming, family, education, culture,
+nature and community can teach extraordinary lessons.
 </p>
 
 </div>
 
 </section>
 
-<div class="message" id="message"></div>
+<div id="message" class="message"></div>
 
 <footer>
 
@@ -402,11 +355,9 @@ reflections that people can learn from and share.
 
 <p>Every picture has a lesson.</p>
 
-<p>
 <a href="#about">About</a>
 <a href="#categories">Categories</a>
 <a href="#saved">Saved</a>
-</p>
 
 </footer>
 
@@ -414,295 +365,502 @@ reflections that people can learn from and share.
 
 const lessons = [
 
-/* ORIGINAL LESSONS */
-
 {
-title:"The Work Behind the Harvest",
-category:"Farming",
-image:"https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
-alt:"Person working in an agricultural field",
-story:"A harvest does not happen in one day. Farmers prepare the land, plant the seeds, care for the crops and wait patiently.",
-moral:"Good results often come from small efforts repeated every day.",
-reflection:"What are you working on today that may produce results tomorrow?"
+title: "The Work Behind the Harvest",
+category: "Farming",
+image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+story: "A harvest does not happen in one day. Farmers prepare the land, plant seeds, care for crops and wait patiently.",
+moral: "Good results often come from small efforts repeated every day.",
+reflection: "What are you working on today that may produce results tomorrow?"
 },
 
 {
-title:"A Family's Strength",
-category:"Family",
-image:"https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=80",
-alt:"Family spending time together",
-story:"Families may face difficult days, but standing together can make difficult moments easier to overcome.",
-moral:"Strong families are built through love, patience and support.",
-reflection:"How can you make your family stronger today?"
+title: "A Mother's Hard Work",
+category: "Family",
+image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80",
+story: "Parents often work quietly every day to provide food, safety and opportunities for their children.",
+moral: "Some of the greatest sacrifices happen without applause.",
+reflection: "How can you appreciate the people who work for your future?"
 },
 
 {
-title:"Education Opens Doors",
-category:"Education",
-image:"https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
-alt:"Students learning in a classroom",
-story:"Learning gives young people knowledge that can help them understand the world and create new opportunities.",
-moral:"Education is an investment that can change a person's future.",
-reflection:"What new thing can you learn today?"
+title: "Education Opens Doors",
+category: "Education",
+image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+story: "Learning gives young people knowledge that can help them understand the world and create opportunities.",
+moral: "Education is an investment in the future.",
+reflection: "What new thing can you learn today?"
 },
 
 {
-title:"Together We Are Stronger",
-category:"Community",
-image:"https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
-alt:"People spending time together",
-story:"When people cooperate, tasks that seem difficult for one person can become possible for many.",
-moral:"Cooperation creates strength that individuals may not have alone.",
-reflection:"Who could you work with to solve a problem?"
+title: "Together We Are Stronger",
+category: "Community",
+image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+story: "When people cooperate, difficult tasks can become possible.",
+moral: "Cooperation creates strength.",
+reflection: "Who could you work with to solve a problem?"
 },
 
 {
-title:"Patience Takes Time",
-category:"Patience",
-image:"https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1200&q=80",
-alt:"Green plant growing",
-story:"A small plant needs time, water and care before it becomes strong.",
-moral:"Growth takes time. Do not give up simply because results are not immediate.",
-reflection:"Where in your life do you need more patience?"
+title: "The Fisherman's Patience",
+category: "Patience",
+image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
+story: "A fisherman cannot control the sea or guarantee the catch. He can prepare and remain patient.",
+moral: "We cannot control everything, but we can control how we respond.",
+reflection: "What situation requires patience from you?"
 },
 
 {
-title:"Kindness Costs Little",
-category:"Kindness",
-image:"https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=80",
-alt:"People helping each other",
-story:"A small act of kindness can make someone's difficult day a little easier.",
-moral:"Kindness can have a much greater impact than we realize.",
-reflection:"Who could you help today?"
+title: "Sharing the Harvest",
+category: "Kindness",
+image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+story: "A successful harvest can provide enough food to share with others.",
+moral: "Abundance becomes more meaningful when it is shared.",
+reflection: "What do you have that you could share?"
 },
 
 {
-title:"The Responsibility of a Farmer",
-category:"Responsibility",
-image:"https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80",
-alt:"Farmer working with crops",
-story:"Farmers depend on careful preparation, regular work and responsible care for their crops.",
-moral:"Responsibility means taking care of what has been placed in your hands.",
-reflection:"What responsibility should you take more seriously?"
+title: "Wisdom From Elders",
+category: "Culture",
+image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1200&q=80",
+story: "Older generations carry memories and experiences that can guide younger people.",
+moral: "Listening to experience can help us avoid repeating mistakes.",
+reflection: "What lesson can you learn from an elder?"
 },
 
 {
-title:"A Mother's Sacrifice",
-category:"Family",
-image:"https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?auto=format&fit=crop&w=1200&q=80",
-alt:"Mother and child",
-story:"Parents often make sacrifices so that their children can have opportunities they did not have.",
-moral:"Love is often demonstrated through sacrifice and action.",
-reflection:"Who has sacrificed something for your future?"
+title: "Caring for the Land",
+category: "Nature",
+image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+story: "Land provides food, water, shelter and natural resources.",
+moral: "We have a responsibility to protect the land for future generations.",
+reflection: "What can you do to care for the land?"
 },
 
 {
-title:"The Fisherman's Patience",
-category:"Patience",
-image:"https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
-alt:"Ocean and fisherman",
-story:"A fisherman cannot control the sea or guarantee the catch. He can prepare, work and remain patient.",
-moral:"We cannot control everything, but we can control how we respond.",
-reflection:"What situation requires patience from you?"
+title: "Starting Again",
+category: "Courage",
+image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
+story: "Every new morning gives us another opportunity to learn from yesterday and try again.",
+moral: "Failure does not have to be the end of the story.",
+reflection: "What would you try again if you had a fresh start?"
 },
 
 {
-title:"A New Generation",
-category:"Education",
-image:"https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
-alt:"Young person learning",
-story:"Every generation has an opportunity to learn from the past while building something better for the future.",
-moral:"Knowledge becomes more valuable when it is passed to others.",
-reflection:"What valuable lesson could you teach someone younger?"
-},
-
-/* PNG AND PACIFIC LESSONS */
-
-{
-title:"The Farmer's Patience",
-category:"Farming",
-image:"https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1200&q=80",
-alt:"Tropical farming landscape",
-story:"A farmer plants today knowing that the crop will not be ready tomorrow. The work requires patience, care and faith in the future.",
-moral:"The best results often require patience before the reward arrives.",
-reflection:"What are you building today for tomorrow?"
+title: "Our Village, Our Responsibility",
+category: "Leadership",
+image: "https://images.unsplash.com/photo-1504159506876-f8338247a14a?auto=format&fit=crop&w=1200&q=80",
+story: "A community becomes stronger when people take responsibility for the places and people around them.",
+moral: "Leadership begins with taking responsibility.",
+reflection: "What positive change can you begin in your community?"
 },
 
 {
-title:"The Coconut Tree",
-category:"Nature",
-image:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-alt:"Tropical coconut landscape",
-story:"The coconut tree can provide food, shade, materials and other benefits to communities.",
-moral:"Nature becomes more valuable when we protect and use it responsibly.",
-reflection:"What part of nature around you should you protect?"
+title: "The Coconut Tree",
+category: "Nature",
+image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+story: "The coconut tree can provide food, shade and useful materials.",
+moral: "Nature becomes more valuable when we protect it.",
+reflection: "What part of nature around you should you protect?"
 },
 
 {
-title:"The Fisherman's Courage",
-category:"Courage",
-image:"https://images.unsplash.com/photo-1498623116890-37e912163d5d?auto=format&fit=crop&w=1200&q=80",
-alt:"Fishing boat on the ocean",
-story:"Going onto the water requires preparation and courage. A fisherman faces uncertainty while working to provide for others.",
-moral:"Courage does not mean having no fear. It means continuing responsibly despite uncertainty.",
-reflection:"What challenge requires courage from you?"
+title: "The Village Canoe",
+category: "Community",
+image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+story: "A canoe can travel farther when everyone understands their role and works together.",
+moral: "Shared responsibilities can move a community forward.",
+reflection: "What role can you play in your community?"
 },
 
 {
-title:"The Village Canoe",
-category:"Community",
-image:"https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
-alt:"Canoe on tropical water",
-story:"A canoe can carry people farther when everyone understands their role and works together.",
-moral:"Shared responsibilities can move a community forward.",
-reflection:"What role can you play in helping your community?"
+title: "The Walk to School",
+category: "Education",
+image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+story: "For some children, education begins with a long journey before they reach the classroom.",
+moral: "Small daily efforts can open future opportunities.",
+reflection: "What effort are you willing to make for your education?"
 },
 
 {
-title:"A Mother's Hard Work",
-category:"Family",
-image:"https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80",
-alt:"Parent caring for a child",
-story:"Parents often work quietly every day to provide food, safety and opportunity for their children.",
-moral:"Some of the greatest sacrifices happen without applause.",
-reflection:"How can you appreciate the people who work for your future?"
+title: "From Garden to Market",
+category: "Farming",
+image: "https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1200&q=80",
+story: "A farmer's work continues after harvest. Getting produce safely to customers also requires planning.",
+moral: "Creating value requires care at every stage.",
+reflection: "How could you improve the journey from producer to customer?"
 },
 
 {
-title:"Wisdom From Elders",
-category:"Culture",
-image:"https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1200&q=80",
-alt:"Older person with younger generation",
-story:"Older generations carry memories, experiences and knowledge that can help younger people understand where they came from.",
-moral:"Listening to experience can help us avoid repeating old mistakes.",
-reflection:"What lesson can you learn from an elder?"
+title: "Helping a Neighbour",
+category: "Kindness",
+image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200&q=80",
+story: "Communities become stronger when neighbours notice difficulties and offer practical help.",
+moral: "A small act of help can strengthen a community.",
+reflection: "Who near you might need a helping hand?"
 },
 
 {
-title:"The Walk to School",
-category:"Education",
-image:"https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
-alt:"Children walking toward school",
-story:"For some children, education begins with a long journey before they even reach the classroom.",
-moral:"Education requires commitment, and small daily efforts can open future opportunities.",
-reflection:"What effort are you willing to make for your education?"
+title: "Hard Work Builds a Future",
+category: "Hard Work",
+image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+story: "A future is often built through ordinary work repeated consistently over time.",
+moral: "Consistent effort can create opportunities.",
+reflection: "What small action can you repeat every day?"
 },
 
 {
-title:"Community Cooperation",
-category:"Community",
-image:"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
-alt:"People working together",
-story:"A community can accomplish more when people contribute their time, skills and energy toward a shared goal.",
-moral:"Progress becomes possible when people work together.",
-reflection:"What community problem could cooperation help solve?"
+title: "Preparing for Rain",
+category: "Responsibility",
+image: "https://images.unsplash.com/photo-1428592953211-077101b2021b?auto=format&fit=crop&w=1200&q=80",
+story: "Wise farmers prepare their gardens and homes before difficult weather arrives.",
+moral: "Preparation today can reduce problems tomorrow.",
+reflection: "What should you prepare for before it becomes urgent?"
 },
 
 {
-title:"Preparing for Rain",
-category:"Responsibility",
-image:"https://images.unsplash.com/photo-1428592953211-077101b2021b?auto=format&fit=crop&w=1200&q=80",
-alt:"Rain falling on green land",
-story:"Wise farmers prepare their gardens and homes before difficult weather arrives.",
-moral:"Preparation today can reduce problems tomorrow.",
-reflection:"What should you prepare for before it becomes urgent?"
+title: "Teaching the Next Generation",
+category: "Education",
+image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=1200&q=80",
+story: "Knowledge becomes powerful when it is passed from one generation to another.",
+moral: "Teaching others helps knowledge continue.",
+reflection: "What useful skill could you teach someone?"
 },
 
 {
-title:"Caring for the Land",
-category:"Nature",
-image:"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
-alt:"Green tropical forest",
-story:"Land provides food, water, shelter and natural resources. Caring for it protects future generations.",
-moral:"We inherit the land, but we also have a responsibility to protect it.",
-reflection:"What can you do to care for the land around you?"
+title: "Respecting the Ocean",
+category: "Nature",
+image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+story: "For many Pacific communities, the ocean provides food, transport and connection.",
+moral: "Resources that sustain us must also be protected.",
+reflection: "How can people protect the ocean?"
 },
 
 {
-title:"Sharing the Harvest",
-category:"Kindness",
-image:"https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
-alt:"Fresh produce harvest",
-story:"A successful harvest can provide more than one family needs. Sharing can strengthen relationships and help others.",
-moral:"Abundance becomes more meaningful when it is shared.",
-reflection:"What do you have that you could share with someone else?"
-},
+title: "Providing for the Family",
+category: "Responsibility",
+image: "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=1200&q=80",
+story: "Providing for a family often requires discipline, planning and consistent effort.",
+moral: "Responsibility is shown through actions.",
+reflection: "What practical action can you take for your family?"
+}
 
-{
-title:"Providing for the Family",
-category:"Responsibility",
-image:"https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=1200&q=80",
-alt:"Family together outdoors",
-story:"Providing for a family often requires discipline, planning and consistent effort.",
-moral:"Responsibility is shown through actions, not only promises.",
-reflection:"What practical action can you take for your family today?"
-},
+];
 
-{
-title:"Building a Home Together",
-category:"Family",
-image:"https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
-alt:"House construction",
-story:"A strong home is built through many contributions. Each person can have a part in creating a safe and supportive family.",
-moral:"A strong family is something people build together.",
-reflection:"What can you contribute to your home?"
-},
+let currentLesson = 0;
 
-{
-title:"Teaching the Next Generation",
-category:"Education",
-image:"https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
-alt:"Teacher helping students",
-story:"Knowledge becomes powerful when it is passed from one generation to another.",
-moral:"Teaching others helps knowledge and wisdom continue.",
-reflection:"What useful skill could you teach someone?"
-},
+function displayLesson(index) {
 
-{
-title:"Respecting the Ocean",
-category:"Nature",
-image:"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
-alt:"Ocean landscape",
-story:"For many Pacific communities, the ocean provides food, transport and connection. Its health matters to everyone who depends on it.",
-moral:"Resources that sustain us must also be respected and protected.",
-reflection:"How can people protect the ocean?"
-},
+currentLesson = index;
 
-{
-title:"From Garden to Market",
-category:"Farming",
-image:"https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1200&q=80",
-alt:"Fresh vegetables at a market",
-story:"A farmer's work does not end when the crop is harvested. Getting produce safely to buyers also requires planning.",
-moral:"Creating value requires care at every stage of the journey.",
-reflection:"How could you improve the journey from producer to customer?"
-},
+const lesson = lessons[index];
 
-{
-title:"Hard Work Builds a Future",
-category:"Hard Work",
-image:"https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
-alt:"Worker at a construction site",
-story:"A future is often built through ordinary work repeated consistently over time.",
-moral:"Consistent effort can create opportunities that do not exist today.",
-reflection:"What small action can you repeat every day?"
-},
+document.getElementById("lesson").innerHTML =
 
-{
-title:"Helping a Neighbour",
-category:"Kindness",
-image:"https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200&q=80",
-alt:"People helping each other",
-story:"Communities become stronger when neighbours notice difficulties and offer practical help.",
-moral:"A small act of help can strengthen an entire community.",
-reflection:"Who near you might need a helping hand?"
-},
+'<article class="lesson-card">' +
 
-{
-title:"Starting Again",
-category:"Courage",
-image:"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80",
-alt:"Sunrise over the ocean",
-story:"Every new morning gives people another opportunity to learn from yesterday and try again.",
-moral:"Failure does not have to be the end of the story.",
-reflection:"What would you try again if you were g
+'<img src="' + lesson.image + '" alt="' + lesson.title + '">' +
+
+'<div class="content">' +
+
+'<div class="category">' +
+lesson.category +
+'</div>' +
+
+'<h2>' +
+lesson.title +
+'</h2>' +
+
+'<p>' +
+lesson.story +
+'</p>' +
+
+'<div class="moral">' +
+
+'<strong>🌱 Moral Lesson</strong>' +
+
+'<p>' +
+lesson.moral +
+'</p>' +
+
+'</div>' +
+
+'<div class="reflection">' +
+
+'💭 <strong>Reflection:</strong> ' +
+lesson.reflection +
+
+'</div>' +
+
+'<div class="buttons">' +
+
+'<button onclick="randomLesson()">🎲 Another Lesson</button>' +
+
+'<button class="secondary" onclick="saveLesson()">❤️ Save</button>' +
+
+'<button class="secondary" onclick="shareLesson()">📤 Share</button>' +
+
+'</div>' +
+
+'</div>' +
+
+'</article>';
+
+}
+
+function randomLesson() {
+
+let next =
+Math.floor(Math.random() * lessons.length);
+
+while (next === currentLesson && lessons.length > 1) {
+
+next =
+Math.floor(Math.random() * lessons.length);
+
+}
+
+displayLesson(next);
+
+}
+
+function saveLesson() {
+
+let saved =
+JSON.parse(localStorage.getItem("pictureLessonsSaved") || "[]");
+
+if (!saved.includes(currentLesson)) {
+
+saved.push(currentLesson);
+
+localStorage.setItem(
+"pictureLessonsSaved",
+JSON.stringify(saved)
+);
+
+showMessage("❤️ Lesson saved!");
+
+} else {
+
+showMessage("This lesson is already saved.");
+
+}
+
+displaySaved();
+
+}
+
+function displaySaved() {
+
+const box =
+document.getElementById("savedLessons");
+
+let saved =
+JSON.parse(localStorage.getItem("pictureLessonsSaved") || "[]");
+
+if (saved.length === 0) {
+
+box.innerHTML =
+"<p>No saved lessons yet.</p>";
+
+return;
+
+}
+
+box.innerHTML = "";
+
+saved.forEach(function(index) {
+
+const div =
+document.createElement("div");
+
+div.className = "saved-card";
+
+div.innerHTML =
+"<strong>" +
+lessons[index].title +
+"</strong><br><br>" +
+
+'<button onclick="displayLesson(' +
+index +
+')">Read Lesson</button>';
+
+box.appendChild(div);
+
+});
+
+}
+
+function shareLesson() {
+
+const lesson = lessons[currentLesson];
+
+const text =
+lesson.title +
+" — " +
+lesson.moral +
+" | Picture Lessons";
+
+if (navigator.share) {
+
+navigator.share({
+
+title: lesson.title,
+
+text: text,
+
+url: window.location.href
+
+});
+
+} else {
+
+navigator.clipboard.writeText(window.location.href);
+
+showMessage("🔗 Link copied!");
+
+}
+
+}
+
+document
+.getElementById("search")
+.addEventListener("input", function() {
+
+const query =
+this.value.toLowerCase().trim();
+
+if (query === "") {
+
+displayLesson(0);
+
+return;
+
+}
+
+const result =
+lessons.find(function(lesson) {
+
+return (
+
+lesson.title.toLowerCase().includes(query) ||
+
+lesson.category.toLowerCase().includes(query) ||
+
+lesson.story.toLowerCase().includes(query) ||
+
+lesson.moral.toLowerCase().includes(query)
+
+);
+
+});
+
+if (result) {
+
+displayLesson(lessons.indexOf(result));
+
+} else {
+
+document.getElementById("lesson").innerHTML =
+
+'<div class="lesson-card">' +
+
+'<div class="content">' +
+
+'<h2>No lesson found</h2>' +
+
+'<p>Try another search.</p>' +
+
+'</div>' +
+
+'</div>';
+
+}
+
+});
+
+document
+.getElementById("categoryFilter")
+.addEventListener("change", function() {
+
+const category = this.value;
+
+if (category === "all") {
+
+displayLesson(0);
+
+return;
+
+}
+
+const result =
+lessons.find(function(lesson) {
+
+return lesson.category === category;
+
+});
+
+if (result) {
+
+displayLesson(lessons.indexOf(result));
+
+}
+
+});
+
+document
+.querySelectorAll(".category-button")
+.forEach(function(button) {
+
+button.addEventListener("click", function() {
+
+const category =
+this.getAttribute("data-category");
+
+document.getElementById("categoryFilter").value =
+category;
+
+const result =
+lessons.find(function(lesson) {
+
+return lesson.category === category;
+
+});
+
+if (result) {
+
+displayLesson(lessons.indexOf(result));
+
+}
+
+document.getElementById("lesson").scrollIntoView({
+behavior: "smooth"
+});
+
+});
+
+});
+
+function showMessage(text) {
+
+const message =
+document.getElementById("message");
+
+message.textContent = text;
+
+setTimeout(function() {
+
+message.textContent = "";
+
+}, 2500);
+
+}
+
+displayLesson(0);
+
+displaySaved();
+
+</script>
+
+</body>
+</html>
